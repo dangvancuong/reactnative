@@ -3,17 +3,21 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({navigation}) => {
     return (
-      <View>
-        <Text style={styles.text}>HomeScreen</Text>
-        <Button
-            onPress={() => navigation.navigate('Components')}
-            title="Go to components Demo"
-        />
-        <Button
-            title="Go to list demo"
-            onPress={() => navigation.navigate('List')}
-        />
-      </View>
+        <View>
+            <Text style={styles.text}>HomeScreen</Text>
+            <Button
+                onPress={() => navigation.navigate('Components')}
+                title="Go to components Demo"
+            />
+            <Button
+                title="Go to list demo"
+                onPress={() => navigation.navigate('List')}
+            />
+            <Button
+                title="Go to Image demo"
+                onPress={() => navigation.navigate('Image')}
+            />
+        </View>
     );
 };
 
